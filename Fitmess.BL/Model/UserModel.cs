@@ -58,7 +58,7 @@ namespace Fitness.BL.Model {
             Height = height;
         }
 
-        public UserModel(string name){
+        public UserModel(string name) {
 
             Name = name ?? throw new ArgumentNullException("Имя пользователя не может быть пустым", nameof(name));
         }

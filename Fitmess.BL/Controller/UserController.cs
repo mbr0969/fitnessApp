@@ -26,14 +26,14 @@ namespace Fitness.BL.Controller {
         /// <param name="height"></param>
         public UserController(string userName) {
 
-            if (string.IsNullOrWhiteSpace(userName)){
+            if (string.IsNullOrWhiteSpace(userName)) {
                 throw new ArgumentException("Имя пользователя не может быть пустым", nameof(userName));
             }
 
             Users = GetUsersData();
             CurrentUser = Users.SingleOrDefault(u => u.Name == userName);
 
-            if (CurrentUser == null){
+            if (CurrentUser == null) {
                 CurrentUser = new UserModel(userName);
                 Users.Add(CurrentUser);
                 IsNewUser = true;
