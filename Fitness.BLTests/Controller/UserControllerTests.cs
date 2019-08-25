@@ -25,11 +25,9 @@ namespace Fitness.BLTests.Controller {
            var height = 190;
            var gender = "man";
            var controller = new UserController(userName);
-
            //Act
            controller.SetNewUserData(gender, birthdate, weight, height);
            var controller2 = new UserController(userName);
-
            //Assert
            Assert.AreEqual(userName, controller2.CurrentUser.Name);
            Assert.AreEqual(birthdate, controller2.CurrentUser.BirthDay);
