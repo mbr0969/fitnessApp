@@ -46,7 +46,7 @@ namespace FitnessCmdAPP.CMD {
 
             while (true){
                 Console.Write($"Введите {name}: ");
-                if (double.TryParse(Console.ReadLine(), out double value)){
+                if (double.TryParse(Console.ReadLine(), out double value)) {
                     return value;
                 }else {
                     Console.WriteLine($"Неверный формат {name}а: ");
