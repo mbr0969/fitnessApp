@@ -16,8 +16,6 @@ namespace Fitness.BL.Controller {
         public UserModel CurrentUser { get; }
         public bool IsNewUser { get; } = false;
 
-
-
         /// <summary>
         /// Конструктор инициализации пользователя
         /// </summary>
